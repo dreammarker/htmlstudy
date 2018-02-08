@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>이미지 맵 만들기 예제</title>
+	</head>
+
+	<body>
+
+	<form name="fileupload" method="post"
+		enctype="multipart/form-data">
+
+	<p>아이디 : <input type="text" name="id" size="20" value=""></p>
+	<input type="hidden" name="name" value="seokj">
+	<p>비밀번호 : <input type="password" name="pswd" size="20"></p>
+	<p><hr></p>
+	<p>성별을 선택해 주세요</p>
+
+	<!-- checked 미리체크중 -->
+	<input type="radio" name="gender" value="man" >남자&nbsp;
+	<input type="radio" name="gender" value="woman" >여자
+
+	<input type="checkbox" name="color" value="red" checked>빨간색
+	&nbsp;
+	<input type="checkbox" name="color" value="blue">파란색
+	
+	<p><hr></p>
+	<p>가장 좋아하는 색상은 어떤 것입니까?</p>
+	<select name="colorful" size="4" multiple>	
+	<option value="red">빨간색</option>
+		<option value="blue">파란색</option>
+		<option value="white">흰색</option>
+		<option value="black" selected>검은색</option>
+		<option value="gray">회색</option>
+	</select>
+	<input type="submit" name="submit">&nbsp;&nbsp;
+	<input type="reset" name="reset">&nbsp;&nbsp;
+	<p><hr></p>
+	<input type="submit" name="submit" value="전송">&nbsp;&nbsp;
+	<input type="reset" name="reset" vaule="취소">&nbsp;&nbsp;
+	<p><hr></p>
+	<input type="button" name="prv" value="이전글">&nbsp;&nbsp;
+	<input type="button" name="next" value="다음글">
+	<input type="image" name="prv" src="logo1.gif"
+		align="middle">&nbsp;&nbsp;
+	<input type="image" name="next" src="logo.png"
+		align="middle">
+	<p><hr></p>
+	<input type="file" name="files" size="30">
+	<p><hr></p>
+	<p>자기소개서</p>
+	<textarea name="content" rows="5" cols="50">
+	간략하게 자기 자신을 소개해 주세요.
+	</textarea>
+	</form>
+
+	</body>
+</html>
