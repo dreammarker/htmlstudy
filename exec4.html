@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+	<body>
+		<fieldset>
+		<legend><p textsize="5"><b>개인 정보 입력</b></p></legend>
+		<label for="id">아이디</label> : 
+		<input type="text" name="id" size="20" value="" id="id">
+			<input type="button" value="ID중복검사"><br><p/>
+		<label for="bir">생년월일</label>
+		<input type="date" name="today" id="bir"><p/>
+		성&nbsp;별:<input type="radio" name="1" value="남성" id="남성" >
+		<label for="남성">남성</label>
+		<input type="radio" name="1" value="여성" id="여성" >
+		<label for="여성">여성</label><p/>
+		<label for="email">E-mail&nbsp;:&nbsp;</label><input type="text" name="id" size="20" value="" id="email">
+		<br><p/>
+		메일수신:<input type="radio" name="2" value="수신동의"  id="수신동의" >
+		<label for="수신동의">수신동의</label>
+		<input type="radio" name="2" value="수신거부"id="수신거부" >
+		<label for="수신거부">수신거부</label>
+		<br><p/>
+		<label for="cellur">핸드폰</label> 
+		
+		<select name="colorful" id="cellur">	
+		<option value="010" selected>010</option>
+		<option value="011">011</option>
+		<option value="012">012</option>
+		<option value="013" >013</option>
+		<option value="015">015</option>
+	</select>-
+<input type="text" name="id" size="10" value="">-<input type="text" name="id" size="10" value="">
+		
+	<br><p/>
+	직업:&nbsp;<select name="colorful" >	
+		<option value="1" selected>학생</option>
+		<option value="2">군인</option>
+		<option value="3">은행원</option>
+		<option value="4" >프로그래머</option>
+		<option value="5">공무원</option>
+	</select><br>
+	<p/>
+	취미:<input type="checkbox" name="쇼핑" value="쇼핑" id="쇼핑"><label for="쇼핑">쇼핑</label>
+		<input type="checkbox" name="쇼핑" value="인터넷" id="인터넷"><label for="인터넷">인터넷</label>
+		<input type="checkbox" name="쇼핑" value="음악감상" id="음악감상"><label for="음악감상">음악감상</label>
+	<input type="checkbox" name="쇼핑" value="독서" id="독서"><label for="독서">독서</label>
+	<input type="checkbox" name="쇼핑" value="스포츠" id="스포츠"><label for="스포츠">스포츠</label>
+	<br>
+
+	<label for="showme">자기소개</label>:<textarea name="content" rows="3" cols="50" id="showme">
+		</textarea>
+
+	</fieldset>
+
+<input type="submit" value="등록">
+			<input type="reset" value="초기화">
+	</body>
+</html>
