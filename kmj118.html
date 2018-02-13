@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<head>
+<script language="JavaScript">
+	function MDE(){
+		document.write("발생된 이벤트 Type : " + window.event.type + "<br>");
+		if(window.event.button == 0)
+		{
+			document.write("왼쪽 버튼이 클릭되었습니다.<br>");
+		}
+		else if(window.event.button == 2)
+		{
+			document.write("오른쪽 버튼이 클릭되었습니다.<br>");
+		}
+		else
+		{
+			document.write("휠이 클릭되었습니다.<br>");
+		}
+		document.write("전체화면을 기준으로 한 마우스 커서의 위치 : ");
+		document.write("("+window.event.screenX+" ,");
+		document.write(window.event.screenY+")<br>");
+		window.event.returnValue = true;
+	}
+</script>
+</head>
+
+<body>
+	<script language ="JavaScript">
+	document.onmousedown = MDE;
+	</script>
+
+
+</body>
+</html>

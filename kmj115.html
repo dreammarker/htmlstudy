@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<head>
+
+</head>
+<body>
+<script language="JavaScript">
+	sum = new Function("x","y","return x+y");
+	mul = new Function("x","y","return x*y");
+
+	//Function 객체 sum과 mul에서 공통으로 사용할 변수 temp1을 생성하고
+	//초기 값을 0 으로 할당한다.
+	Function.prototype.temp1 = 0;
+
+	return_sum = sum(100,20); //sum함수의 호출
+	return_mul = mul(100,20); //mul함수의 호출
+	
+	document.write("sum(100,20) : " +return_sum+"<br>");
+	document.write("mul(100,20) : " +return_mul+"<br>");
+	document.write("sum.temp1 : " + sum.temp1 + "<br>");
+	document.write("mul.temp1 : " + mul.temp1 + "<br>");
+	
+	document.write("sum.toString() : "+sum.toString( )+ "<br>");
+	document.write("mul.toString() : "+mul.toString( )+"<br>");	
+</script>
+</body>
+</html>

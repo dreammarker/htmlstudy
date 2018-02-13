@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+	<head>
+	<h2> 객체의 정의와 생성 및 참조</h2>
+	<script language="javascript">
+	
+		//생성자 함수의 정의 시작
+		function phone_print() {
+			document.write("phone제조회사 : " + this.company + "<br>");
+			document.write("phone의 가격 : " + this.cost + "<br>");
+			document.write("phone의 유형 : " + this.type+ "<br>");
+		}
+		function phone(company, cost, type) {
+			this.company = company;
+			this.cost = cost;
+			this.type = type;
+			this.phone_print = phone_print; //메소드 phone_print의 등록
+		}
+				
+	</script>
+	</head>
+<body>
+	<h1>객체의 생성 및 속성 값 참조 </h1><p>
+	<script language = "javascript">
+		phone1 = new phone("LG",50,"mobile"); //phone1 객체 생성
+		phone2 = new phone("SS",50,"mobile"); //phone2 객체 생성
+		//객체의 속성 값을 인쇄하기
+
+		document.write("<h2>phone1</h2><p>");
+		phone1.phone_print(); //메소드 phone_print의 호출
+
+		document.write("<p><p>");
+		document.write("<h2>phone2</h2><p>");
+		phone2.phone_print(); //메소드 phone_print의 호출
+	</script>	
+	</body>
+</html>
